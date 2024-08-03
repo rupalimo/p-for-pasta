@@ -1,0 +1,74 @@
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+/*SELECTION*/
+::-moz-selection {
+	color: #9c7547;
+	background: transparent;
+}
+
+::selection {
+	color: var(--text-color-secondary);
+	background: var(--text-color);
+}
+
+:root {
+	--primary-font: 'Arial', sans-serif;
+	--secondary-font: 'Times New Roman', serif;
+	--text-color: #000;
+	--text-color-secondary: #fff;
+	--accent-color: #8b6c38;
+	font-family: var(--primary-font);
+	color: var(--text-color);
+	font-size: 1em;
+	cursor: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+p,
+a {
+	padding: 0;
+	margin: 0;
+}
+
+p span {
+	display: none;
+}
+
+
+p:hover span {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+}
+
+a:hover {
+	cursor: default;
+	font-family: var(--secondary-font);
+	transition: 0.15s linear;
+
+}
+
+main {
+	position: absolute;
+	z-index: -10;
+}
